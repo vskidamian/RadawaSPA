@@ -11,3 +11,14 @@ hamburger.addEventListener("click", () => {
     });
     body.classList.toggle("overy");
 });
+
+links.forEach(link => {
+    link.addEventListener("click", () => {
+        hamburger.classList.toggle("is-active")
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+            link.classList.toggle("fade");
+        })
+        body.classList.toggle("overy");
+    })
+})
