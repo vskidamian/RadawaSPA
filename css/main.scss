@@ -34,7 +34,7 @@ header {
     background-color: var(--primary);
     display: flex;
 }
-h1, h2, .logo, a, p {
+h1, h2, .logo, a, p, label, textarea {
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
 }
@@ -75,7 +75,7 @@ a {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    clip-path: circle(50px at 90% -10%);
+    clip-path: circle(1px at 90% -10%);
     -webkit-clip-path: circle(100px at 90% -10%);
     transition: all 0.4s ease-out;
     pointer-events: none;
@@ -147,8 +147,16 @@ a {
     padding: 15px 10px;
     background-color: var(--primary);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
 }
-.btn a {
+.btn__kontakt {
+    margin-top: 15px;
+    padding: 10px 10px;
+    background-color: var(--primary);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.btn a, .btn__kontakt a{
     text-decoration: none;
     outline: none;
     border: none;
@@ -160,6 +168,7 @@ a {
     margin-top: 10px;
     background-color: #fff;
 }
+
 #about {
     width: 100%;
     display: flex;
@@ -171,10 +180,10 @@ a {
     margin: 10px auto;
     border: 2px solid var(--primary);
 }
-.intro-txt, .oferta-txt, .galeria__txt {
+.intro-txt, .oferta-txt, .galeria-txt, .kontakt-txt {
     padding: 20px 0;
 }
-.intro__title, .oferta__title, .galeria__title {
+.intro__title, .oferta__title, .galeria__title, .kontakt__title {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -186,6 +195,11 @@ a {
     font-size: 0.9rem;
     text-align: center;
     margin: 25px;
+}
+.kontakt__text {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0px 25px 25p 25px;
 }
 .intro__img {
     margin-top: 2rem;
@@ -319,6 +333,48 @@ a {
 .mfp-arrow-right {
     -webkit-transform-origin: 0 0 !important;
     transform-origin: 0 0 !important;
+}
+input,textarea{
+    background: rgba(255,255,255,0.05);
+    padding: 10px 1px;
+    border-radius: 20px;
+    border: 2px solid var(--primary);
+    color: black;
+    font-size: 1em;
+  }
+
+#kontakt form {
+    color: #FAA077;
+    width: 60%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+#kontakt label {
+    color: black;
+    font-size: 1em;
+}
+#kontakt textarea {
+    height: 200px;
+    font-size: 0.8em;
+}
+#kontakt input, #kontakt textarea {
+    resize: none;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+#kontakt button {
+    margin-top: 10px;
+} 
+form:last-child div {
+    text-align: center;
+}
+.kontakt-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media (min-width: 550px) {
     body {

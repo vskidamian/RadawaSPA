@@ -1,0 +1,18 @@
+            <a href="./img/photos/bath2.jpg" class="image gallery__item gallery__item--7">
+                <img src="./img/photos/bath2.jpg" class="gallery__img" alt="7">
+            </a>
+            <a href="./img/photos/bedroom1.jpg" class="image gallery__item gallery__item--8">
+                <img src="./img/photos/bedroom1.jpg" class="gallery__img" alt="8">
+            </a>
+            <a href="./img/photos/bedroom2.jpg" class="image gallery__item gallery__item--9">
+                <img src="./img/photos/bedroom2.jpg" class="gallery__img" alt="9">
+            </a>
+            <a href="./img/photos/bedroom3.jpg" class="image gallery__item gallery__item--10">
+                <img src="./img/photos/bedroom3.jpg" class="gallery__img" alt="10">
+            </a>
+            <a href="./img/photos/bedroom4.jpg" class="image gallery__item gallery__item--11">
+                <img src="./img/photos/bedroom4.jpg" class="gallery__img" alt="11">
+            </a>
+            <a href="./img/photos/bedroom5.jpg" class="image gallery__item gallery__item--12">
+                <img src="./img/photos/bedroom5.jpg" class="gallery__img" alt="12">
+            </a>
