@@ -9,174 +9,176 @@
     <title>Radawa Agroturystyka Cholewa</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="#">
-                <img src="./img/logo.svg" alt="Cholewa Agroturystyka Logo">
-            </a>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <a href="#">
+                    <img src="./img/logo.svg" alt="Cholewa Agroturystyka Logo">
+                </a>
+            </div>
+            <nav class="nav-bar">
+                <button class="hamburger hamburger--slider animate__animated animate__bounceInRight" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="#about">O nas</a></li>
+                    <li><a class="nav-link" href="#oferta">Oferta</a></li>
+                    <li><a class="nav-link" href="#galeria">Galeria</a></li>
+                    <li><a class="nav-link" href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="phone">
+                <a href="#"><img src="./img/phone.svg" alt="Phone Icon">+48 123 456 789</a>
+            </div>
+        </header>
+        <div class="mobile__phone animate__animated animate__bounceInLeft">
+            <a href="#">Zarezerwuj teraz &nbsp; <img src="./img/phone.svg" alt="Phone Icon">+48 123 456 789</a>
         </div>
-        <nav class="nav-bar">
-            <button class="hamburger hamburger--slider animate__animated animate__bounceInRight" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <ul class="nav-links">
-                <li><a class="nav-link" href="#about">O nas</a></li>
-                <li><a class="nav-link" href="#oferta">Oferta</a></li>
-                <li><a class="nav-link" href="#galeria">Galeria</a></li>
-                <li><a class="nav-link" href="#">Kontakt</a></li>
-            </ul>
-        </nav>
-        <div class="phone">
-            <a href="#"><img src="./img/phone.svg" alt="Phone Icon">+48 123 456 789</a>
-        </div>
-    </header>
-    <div class="mobile__phone animate__animated animate__bounceInLeft">
-        <a href="#">Zarezerwuj teraz &nbsp; <img src="./img/phone.svg" alt="Phone Icon">+48 123 456 789</a>
+        <section id="about">
+            <div class="intro-txt">
+                <div class="intro__title">
+                    <h1>Agroturystyka Radawa</h1>
+                </div>
+                <hr class="line">
+                <div class="intro__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iusto dignissimos maiores ipsum fuga? Veniam magnam rerum quam totam quisquam, fugit maxime, culpa quod labore alias modi facere voluptatum illo.</p>
+                </div>
+            </div>
+            <div class="btn btn__about">
+                <a href="#">Czytaj więcej</a>
+            </div>
+            <div class="intro__img">
+                <img src="./img/about.jpg" alt="Agroturystyka Radawa">
+            </div>
+        </section>
+        <section id="oferta">
+            <div class="oferta-txt">
+                <div class="oferta__title">
+                    <h1>W naszej ofercie</h1>
+                </div>
+                <hr class="line">
+                <div class="oferta__text">
+                    <p>Similique iusto dignissimos maiores ipsum fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card first-card">
+                    <div class="card-img">
+                        <img src="./img/bed.svg" alt="Bed Icon">
+                    </div>
+                    <div class="card-txt">
+                        <div class="card-title">
+                            <h2>Zdrowy sen</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>Maecenas aliquet ut justo eget volutpat. Praesent pellentesque eleifend finibus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card second-card">
+                    <div class="card-img">
+                        <img src="./img/dinner.svg" alt="Dinner Icon">
+                    </div>
+                    <div class="card-txt">
+                        <div class="card-title">
+                            <h2>Zbalansowa Dieta</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>Proin maximus a nibh in placerat. Aliquam cursus volutpat ullamcorper.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card third-card">
+                    <div class="card-img">
+                        <img src="./img/relax.svg" alt="Relax Icon">
+                    </div>
+                    <div class="card-txt">
+                        <div class="card-title">
+                            <h2>ZASŁUŻONY RELAKS</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>Praesent hendrerit justo vel nisl feugiat, eget consectetur dui posuere.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn btn__oferta">
+                    <a href="#">Poznaj naszą ofertę</a>
+                </div>
+            </div>
+        </section>
+        <section id="galeria">
+            <div class="galeria-txt">
+                <div class="galeria__title">
+                    <h1>Galeria</h1>
+                </div>
+                <hr class="line">
+            </div>
+            <div class="gallery">
+                <a href="./img/photos/main1.jpg" class="image gallery__item gallery__item--1">
+                    <img src="./img/photos/main1.jpg" class="gallery__img" alt="1">
+                </a>
+                <a href="./img/photos/main2.jpg" class="image gallery__item gallery__item--2">
+                    <img src="./img/photos/main2.jpg" class="gallery__img" alt="2">
+                </a>
+                <a href="./img/photos/main_kitchen.jpg" class="image gallery__item gallery__item--3">
+                    <img src="./img/photos/main_kitchen.jpg" class="gallery__img" alt="3">
+                </a>
+                <a href="./img/photos/studio.jpg" class="image gallery__item gallery__item--4">
+                    <img src="./img/photos/studio.jpg" class="gallery__img" alt="4">
+                </a>
+                <a href="./img/photos/studio1.jpg" class="image gallery__item gallery__item--5">
+                    <img src="./img/photos/studio1.jpg" class="gallery__img" alt="5">
+                </a>
+                <a href="./img/photos/bath3.jpg" class="gallery__item gallery__item--6">
+                    <img src="./img/photos/bath3.jpg" class="gallery__img" alt="6">
+                </a>
+                <a href="./img/photos/bath2.jpg" class="image gallery__item gallery__item--7">
+                    <img src="./img/photos/bath2.jpg" class="gallery__img" alt="7">
+                </a>
+                <a href="./img/photos/bedroom1.jpg" class="image gallery__item gallery__item--8">
+                    <img src="./img/photos/bedroom1.jpg" class="gallery__img" alt="8">
+                </a>
+                <a href="./img/photos/bedroom2.jpg" class="image gallery__item gallery__item--9">
+                    <img src="./img/photos/bedroom2.jpg" class="gallery__img" alt="9">
+                </a>
+                <a href="./img/photos/bedroom3.jpg" class="image gallery__item gallery__item--10">
+                    <img src="./img/photos/bedroom3.jpg" class="gallery__img" alt="10">
+                </a>
+                <a href="./img/photos/bedroom4.jpg" class="image gallery__item gallery__item--11">
+                    <img src="./img/photos/bedroom4.jpg" class="gallery__img" alt="11">
+                </a>
+                <a href="./img/photos/bedroom5.jpg" class="image gallery__item gallery__item--12">
+                    <img src="./img/photos/bedroom5.jpg" class="gallery__img" alt="12">
+                </a>
+            </div>
+        </section>
+        <section id="kontakt">
+            <div class="kontakt-txt">
+                <div class="kontakt__title">
+                    <h1>Kontakt</h1>
+                </div>
+                <hr class="line">
+            </div>
+            <p class="kontakt__text">Skontaktuj się z nami lub zarezerwuj pobyt!</p>
+            <form class="kontakt-form">
+                <label for="name">Imię</label>
+                <input type="text" id="name">
+                <label for="surname">Nazwisko</label>
+                <input type="text" id="surname">
+                <label for="emial">E-mail</label>
+                <input type="email" id="email">
+                <label for="text-area">Twoja wiadomość</label>
+                <textarea id="text-area"></textarea>
+                <div class="kontakt-btn">
+                    <div class="kontakt btn__kontakt">
+                        <a href="#">Wyślij</a>
+                    </div>
+                </div>
+            </form>
+        </section>
     </div>
-    <section id="about">
-        <div class="intro-txt">
-            <div class="intro__title">
-                <h1>Agroturystyka Radawa</h1>
-            </div>
-            <hr class="line">
-            <div class="intro__text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iusto dignissimos maiores ipsum fuga? Veniam magnam rerum quam totam quisquam, fugit maxime, culpa quod labore alias modi facere voluptatum illo.</p>
-            </div>
-        </div>
-        <div class="btn btn__about">
-            <a href="#">Czytaj więcej</a>
-        </div>
-        <div class="intro__img">
-            <img src="./img/about.jpg" alt="Agroturystyka Radawa">
-        </div>
-    </section>
-    <section id="oferta">
-        <div class="oferta-txt">
-            <div class="oferta__title">
-                <h1>W naszej ofercie</h1>
-            </div>
-            <hr class="line">
-            <div class="oferta__text">
-                <p>Similique iusto dignissimos maiores ipsum fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-        </div>
-        <div class="cards">
-            <div class="card first-card">
-                <div class="card-img">
-                    <img src="./img/bed.svg" alt="Bed Icon">
-                </div>
-                <div class="card-txt">
-                    <div class="card-title">
-                        <h2>Zdrowy sen</h2>
-                    </div>
-                    <div class="card-text">
-                        <p>Maecenas aliquet ut justo eget volutpat. Praesent pellentesque eleifend finibus.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card second-card">
-                <div class="card-img">
-                    <img src="./img/dinner.svg" alt="Dinner Icon">
-                </div>
-                <div class="card-txt">
-                    <div class="card-title">
-                        <h2>Zbalansowa Dieta</h2>
-                    </div>
-                    <div class="card-text">
-                        <p>Proin maximus a nibh in placerat. Aliquam cursus volutpat ullamcorper.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card third-card">
-                <div class="card-img">
-                    <img src="./img/relax.svg" alt="Relax Icon">
-                </div>
-                <div class="card-txt">
-                    <div class="card-title">
-                        <h2>ZASŁUŻONY RELAKS</h2>
-                    </div>
-                    <div class="card-text">
-                        <p>Praesent hendrerit justo vel nisl feugiat, eget consectetur dui posuere.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="btn btn__oferta">
-                <a href="#">Poznaj naszą ofertę</a>
-            </div>
-        </div>
-    </section>
-    <section id="galeria">
-        <div class="galeria-txt">
-            <div class="galeria__title">
-                <h1>Galeria</h1>
-            </div>
-            <hr class="line">
-        </div>
-        <div class="gallery">
-            <a href="./img/photos/main1.jpg" class="image gallery__item gallery__item--1">
-                <img src="./img/photos/main1.jpg" class="gallery__img" alt="1">
-            </a>
-            <a href="./img/photos/main2.jpg" class="image gallery__item gallery__item--2">
-                <img src="./img/photos/main2.jpg" class="gallery__img" alt="2">
-            </a>
-            <a href="./img/photos/main_kitchen.jpg" class="image gallery__item gallery__item--3">
-                <img src="./img/photos/main_kitchen.jpg" class="gallery__img" alt="3">
-            </a>
-            <a href="./img/photos/studio.jpg" class="image gallery__item gallery__item--4">
-                <img src="./img/photos/studio.jpg" class="gallery__img" alt="4">
-            </a>
-            <a href="./img/photos/studio1.jpg" class="image gallery__item gallery__item--5">
-                <img src="./img/photos/studio1.jpg" class="gallery__img" alt="5">
-            </a>
-            <a href="./img/photos/bath3.jpg" class="gallery__item gallery__item--6">
-                <img src="./img/photos/bath3.jpg" class="gallery__img" alt="6">
-            </a>
-            <a href="./img/photos/bath2.jpg" class="image gallery__item gallery__item--7">
-                <img src="./img/photos/bath2.jpg" class="gallery__img" alt="7">
-            </a>
-            <a href="./img/photos/bedroom1.jpg" class="image gallery__item gallery__item--8">
-                <img src="./img/photos/bedroom1.jpg" class="gallery__img" alt="8">
-            </a>
-            <a href="./img/photos/bedroom2.jpg" class="image gallery__item gallery__item--9">
-                <img src="./img/photos/bedroom2.jpg" class="gallery__img" alt="9">
-            </a>
-            <a href="./img/photos/bedroom3.jpg" class="image gallery__item gallery__item--10">
-                <img src="./img/photos/bedroom3.jpg" class="gallery__img" alt="10">
-            </a>
-            <a href="./img/photos/bedroom4.jpg" class="image gallery__item gallery__item--11">
-                <img src="./img/photos/bedroom4.jpg" class="gallery__img" alt="11">
-            </a>
-            <a href="./img/photos/bedroom5.jpg" class="image gallery__item gallery__item--12">
-                <img src="./img/photos/bedroom5.jpg" class="gallery__img" alt="12">
-            </a>
-        </div>
-    </section>
-    <section id="kontakt">
-        <div class="kontakt-txt">
-            <div class="kontakt__title">
-                <h1>Kontakt</h1>
-            </div>
-            <hr class="line">
-        </div>
-        <p class="kontakt__text">Skontaktuj się z nami lub zarezerwuj pobyt!</p>
-        <form class="kontakt-form">
-            <label for="name">Imię</label>
-            <input type="text" id="name">
-            <label for="surname">Nazwisko</label>
-            <input type="text" id="surname">
-            <label for="emial">E-mail</label>
-            <input type="email" id="email">
-            <label for="text-area">Twoja wiadomość</label>
-            <textarea id="text-area"></textarea>
-            <div class="kontakt-btn">
-                <div class="kontakt btn__kontakt">
-                    <a href="#">Wyślij</a>
-                </div>
-            </div>
-        </form>
-    </section>
     <script src="./app.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha256-P93G0oq6PBPWTP1IR8Mz/0jHHUpaWL0aBJTKauisG7Q=" crossorigin="anonymous"></script>
