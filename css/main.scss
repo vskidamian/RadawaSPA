@@ -36,7 +36,7 @@ header {
     background-color: var(--primary);
     display: flex;
 }
-h1, h2, .logo, a, p, label, textarea {
+h1, h2, h3, .logo, a, p, label, textarea {
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
 }
@@ -50,7 +50,7 @@ a {
 .logo {
     z-index: 51;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 50%;
     a {
@@ -153,6 +153,7 @@ a {
     border-radius: 20px;
     text-decoration: none;
     color: black;
+    display: inline;
 }
 .btn__about {
     margin-bottom: 25px;
@@ -170,7 +171,7 @@ a {
     font-weight: 500;
 }
 .btn__oferta {
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 .btn-oferta, .btn-kontakt {
@@ -400,11 +401,72 @@ form:last-child div {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 footer {
-    background-color: #ffc8ae;
+    background-color: #252422;
+    color: var(--primary);
+    display: flex;
+    position: relative;
+    width: 100%;
 }
+.footer__email {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer__txt {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 70%;
+    padding: 20px;
+    line-height: 30px;
+}
+.email-img {
+    margin-right: 10px;
+}
+.footer__title {
+    font-weight: 800;
+    color: #faa077;
+}
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.footer__fb {
+    margin-top: 15px;
+    height: 50px;
+    width: 50px;
 
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
+.fat {
+    font-weight: 600;
+}
+.autopromotion {
+    background: black;
+    color: var(--primary);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.hearth {
+    font-weight: 900;
+    color: #faa077;
+    margin: 0 10px;
+}
 @media (min-width: 550px) {
     body {
         font-size: 18px;
