@@ -435,17 +435,18 @@ li.fade {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.596);
   padding: 1rem;
   margin: 30px 0;
   height: 300px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
+  width: 75%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  border-radius: 20px;
 }
 
 .first-card img {
@@ -803,15 +804,111 @@ footer {
   margin: 0 10px;
 }
 
-@media (min-width: 550px) {
+.vines {
+  display: none;
+}
+
+@media (min-width: 750px) {
   body {
     font-size: 18px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 25px;
+    width: 20%;
+  }
+  .phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    width: 60%;
+  }
+  .phone a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+  }
+  .phone img {
+    margin-right: 5px;
+  }
+  .hamburger {
+    z-index: 51;
+  }
+  .mobile__phone {
+    display: none;
+  }
+  .nav-bar {
+    width: 20%;
+  }
+  .nav-links {
+    top: 20%;
+  }
+  .nav-links.open {
+    -webkit-clip-path: circle(1500px at 90% -10%);
+            clip-path: circle(1500px at 90% -10%);
+  }
+  .cards {
+    position: relative;
+  }
+  .card {
+    z-index: 2;
+    width: 60%;
+  }
+  .first-card {
+    margin-right: 250px;
+  }
+  .second-card {
+    margin-left: 250px;
+  }
+  .third-card {
+    margin-right: 250px;
+  }
+  #oferta {
+    position: relative;
+  }
+  .vines {
+    opacity: 0.5;
+    z-index: 1;
+    position: absolute;
+    display: block;
+    top: 9.9%;
+    width: 800px;
+    height: 1500px;
+  }
+  .vines img {
+    width: 100%;
+    height: 100%;
+  }
+  .btn__oferta {
+    z-index: 2;
   }
 }
 
 @media (min-width: 900px) {
   body {
     font-size: 20px;
+    display: none;
   }
 }
 
