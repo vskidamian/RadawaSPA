@@ -323,6 +323,7 @@ li.fade {
 
 .btn__about {
   margin-bottom: 25px;
+  white-space: nowrap;
 }
 
 .btn__kontakt {
