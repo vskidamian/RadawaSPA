@@ -129,7 +129,7 @@
 }
 
 :root {
-  --primary: #FFE5D9;
+  --primary: #ffeae1;
   --secondary: #0A0B5B;
 }
 
@@ -185,6 +185,7 @@ a {
 
 .hamburger, .hamburger--slider.is-active {
   margin-right: 10px;
+  z-index: 200;
 }
 
 .logo {
@@ -201,8 +202,9 @@ a {
   width: 50%;
 }
 
-.logo a {
-  text-decoration: none;
+.logo a img {
+  width: 100%;
+  height: 100%;
 }
 
 .phone {
@@ -223,14 +225,14 @@ a {
 }
 
 .nav-links {
-  z-index: 50;
+  z-index: 199;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: var(--primary);
   position: absolute;
-  right: 0px;
-  top: 75%;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 100%;
   -webkit-box-orient: vertical;
@@ -245,9 +247,9 @@ a {
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   pointer-events: none;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .nav-links.open {
@@ -276,6 +278,7 @@ a {
 
 li.fade {
   opacity: 1;
+  padding: 1.2rem;
 }
 
 .mobile__phone {
@@ -327,18 +330,14 @@ li.fade {
 }
 
 .btn__kontakt {
-  margin-top: 15px;
-  background-color: var(--primary);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
+  margin-top: 30px;
 }
 
 .btn__kontakt a {
   outline: none;
   border: none;
   color: black;
-  font-weight: 500;
+  padding: 15px 40px;
 }
 
 .btn__oferta {
@@ -425,6 +424,25 @@ li.fade {
           align-items: center;
   background-color: #ffeae0;
   padding: 2rem;
+  background-image: url(../img/vines.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 200px;
+}
+
+.cards-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card {
@@ -436,7 +454,7 @@ li.fade {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.596);
+  background-color: rgba(255, 241, 241, 0.849);
   padding: 1rem;
   margin: 30px 0;
   height: 300px;
@@ -448,18 +466,27 @@ li.fade {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   border-radius: 20px;
+  border: 3px solid white;
+}
+
+.first-card .card-img {
+  width: 100px;
+  height: 100px;
 }
 
 .first-card img {
-  height: 80px;
+  height: 100%;
+  width: 100%;
 }
 
 .second-card img {
-  height: 120px;
+  height: 100%;
+  width: 100%;
 }
 
 .third-card img {
-  height: 130px;
+  height: 100%;
+  width: 100%;
 }
 
 .card-title {
@@ -809,6 +836,10 @@ footer {
   display: none;
 }
 
+.nav-links-desktop {
+  display: none;
+}
+
 @media (min-width: 750px) {
   body {
     font-size: 18px;
@@ -904,18 +935,89 @@ footer {
   .btn__oferta {
     z-index: 2;
   }
+  .nav-links-desktop {
+    display: none;
+  }
 }
 
 @media (min-width: 900px) {
   body {
     font-size: 20px;
+  }
+  .phone {
     display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-bar {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav-links-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-links-desktop li {
+    padding: 0 2.5rem;
+    list-style: none;
+  }
+  .nav-links-desktop li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .cards {
+    height: 500px;
+    background-image: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .cards::before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    width: 150%;
+    height: 150%;
+    z-index: -1;
+    background: url(../img/vines.svg) 0 0 no-repeat;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  .card {
+    width: 30%;
+    margin: 0px 10px;
+  }
+  .cards-inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    margin-bottom: 20px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) and (min-width: 1200px) {
   body {
     font-size: 22px;
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

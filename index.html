@@ -25,7 +25,15 @@
                         <span class="hamburger-inner"></span>
                     </span>
                 </button>
-                <ul class="nav-links">
+                <div class="mobile-menu">
+                    <ul class="nav-links">
+                        <li><a class="nav-link" href="#about">O nas</a></li>
+                        <li><a class="nav-link" href="#oferta">Oferta</a></li>
+                        <li><a class="nav-link" href="#galeria">Galeria</a></li>
+                        <li><a class="nav-link" href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+                <ul class="nav-links-desktop">
                     <li><a class="nav-link" href="#about">O nas</a></li>
                     <li><a class="nav-link" href="#oferta">Oferta</a></li>
                     <li><a class="nav-link" href="#galeria">Galeria</a></li>
@@ -64,42 +72,44 @@
                 </div>
             </div>
             <div class="cards">
-                <div class="card first-card">
-                    <div class="card-img">
-                        <img src="./img/bed.svg" alt="Bed Icon">
-                    </div>
-                    <div class="card-txt">
-                        <div class="card-title">
-                            <h2>Zdrowy sen</h2>
+                <div class="cards-inner">
+                    <div class="card first-card">
+                        <div class="card-img">
+                            <img src="./img/bed.svg" alt="Bed Icon">
                         </div>
-                        <div class="card-text">
-                            <p>Maecenas aliquet ut justo eget volutpat. Praesent pellentesque eleifend finibus.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card second-card">
-                    <div class="card-img">
-                        <img src="./img/dinner.svg" alt="Dinner Icon">
-                    </div>
-                    <div class="card-txt">
-                        <div class="card-title">
-                            <h2>Zbalansowa Dieta</h2>
-                        </div>
-                        <div class="card-text">
-                            <p>Proin maximus a nibh in placerat. Aliquam cursus volutpat ullamcorper.</p>
+                        <div class="card-txt">
+                            <div class="card-title">
+                                <h2>Zdrowy sen</h2>
+                            </div>
+                            <div class="card-text">
+                                <p>Maecenas aliquet ut justo eget volutpat. Praesent pellentesque eleifend finibus.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card third-card">
-                    <div class="card-img">
-                        <img src="./img/relax.svg" alt="Relax Icon">
-                    </div>
-                    <div class="card-txt">
-                        <div class="card-title">
-                            <h2>ZASŁUŻONY RELAKS</h2>
+                    <div class="card second-card">
+                        <div class="card-img">
+                            <img src="./img/dinner.svg" alt="Dinner Icon">
                         </div>
-                        <div class="card-text">
-                            <p>Praesent hendrerit justo vel nisl feugiat, eget consectetur dui posuere.</p>
+                        <div class="card-txt">
+                            <div class="card-title">
+                                <h2>Zbalansowa Dieta</h2>
+                            </div>
+                            <div class="card-text">
+                                <p>Proin maximus a nibh in placerat. Aliquam cursus volutpat ullamcorper.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card third-card">
+                        <div class="card-img">
+                            <img src="./img/relax.svg" alt="Relax Icon">
+                        </div>
+                        <div class="card-txt">
+                            <div class="card-title">
+                                <h2>ZASŁUŻONY RELAKS</h2>
+                            </div>
+                            <div class="card-text">
+                                <p>Praesent hendrerit justo vel nisl feugiat, eget consectetur dui posuere.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -107,9 +117,9 @@
                     <a href="#" class="btn-oferta">Poznaj naszą ofertę</a>
                 </div>
             </div>
-            <div class="vines">
+            <!-- <div class="vines">
                 <img src="./img/vines.svg" alt="vines">
-            </div>
+            </div> -->
         </section>
         <section id="galeria">
             <div class="galeria-txt">
@@ -176,7 +186,7 @@
                     <label for="text-area">Twoja wiadomość</label>
                     <textarea id="text-area"></textarea>
                     <div class="kontakt-btn">
-                        <div class="kontakt btn__kontakt">
+                        <div class="btn__kontakt">
                             <a href="#" class="btn-kontakt">Wyślij</a>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import "./hamburgers/hamburgers.scss";
 :root {
-    --primary: #FFE5D9;
+    --primary: #ffeae1;
     --secondary: #0A0B5B;
 } 
 * {
@@ -28,7 +28,6 @@ button::-moz-focus-inner {
     border: 0;
   }
   
-  
 header {
     position: relative;
     width: 100%;
@@ -46,6 +45,7 @@ a {
 }
 .hamburger, .hamburger--slider.is-active {
     margin-right: 10px;
+    z-index: 200;
 }
 .logo {
     z-index: 51;
@@ -53,8 +53,9 @@ a {
     justify-content: center;
     align-items: center;
     width: 50%;
-    a {
-        text-decoration: none;
+    a img {
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -68,12 +69,12 @@ a {
     align-items: center;
 }
 .nav-links {
-    z-index: 50;
+    z-index: 199;
     display: flex;
     background-color: var(--primary);
     position: absolute;
-    right: 0px;
-    top: 75%;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100%;
     flex-direction: column;
@@ -82,7 +83,7 @@ a {
     -webkit-clip-path: circle(100px at 90% -10%);
     transition: all 0.4s ease-out;
     pointer-events: none;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .nav-links.open{
     clip-path: circle(1200px at 90% -10%);
@@ -106,23 +107,9 @@ a {
         border-top: 3px solid var(--primary);
     }
   }
-// .nav-links a:not(:first-child) {
-//     border-top: 1px solid #f4acb7;
-// }
-//   .nav-links li:nth-child(1) {
-//     transition: all 0.3s ease 0.2s;
-//   }
-//   .nav-links li:nth-child(2) {
-//     transition: all 0.3s ease 0.4s;
-//   }
-//   .nav-links li:nth-child(3) {
-//     transition: all 0.3s ease 0.6s;
-//   }
-//   .nav-links li:nth-child(4) {
-//     transition: all 0.3s ease 0.8s;
-//   }
   li.fade {
     opacity: 1;
+    padding: 1.2rem;
   }
 
 .mobile__phone {
@@ -160,16 +147,14 @@ a {
     white-space: nowrap;
 }
 .btn__kontakt {
-    margin-top: 15px;
-    background-color: var(--primary);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    margin-top: 30px;
+    
 }
 .btn__kontakt a{
     outline: none;
     border: none;
     color: black;
-    font-weight: 500;
+    padding: 15px 40px;
 }
 .btn__oferta {
     margin-top: 30px;
@@ -219,19 +204,28 @@ a {
         width: 100vw;
     }
 }
-.cards {
+.cards{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #ffeae0;
     padding: 2rem;
+    background-image: url(../img/vines.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 200px; 
+}
+.cards-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .card {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.596);
+    background-color: rgba(255, 241, 241, 0.849);
     padding: 1rem;
     margin: 30px 0;
     height: 300px;
@@ -239,20 +233,28 @@ a {
     width: 75%;  
     justify-content: space-evenly;
     border-radius: 20px;
+    border: 3px solid rgb(255, 255, 255);
+}
+.first-card .card-img {
+    width: 100px;
+    height: 100px;
 }
 .first-card {
     img {
-        height: 80px;
+        height: 100%;
+        width: 100%;
     }
 }
 .second-card {
     img {
-        height: 120px;
+        height: 100%;
+        width: 100%;
     }
 }
 .third-card {
     img {
-        height: 130px;
+        height: 100%;
+        width: 100%;
     }
 }
 .card-title {
@@ -471,6 +473,9 @@ footer {
 .vines {
     display: none;
 }
+.nav-links-desktop {
+    display: none;
+}
 @media (min-width: 750px) {
     body {
         font-size: 18px;
@@ -557,18 +562,80 @@ footer {
     .btn__oferta {
         z-index: 2;
     }
-}
-
-@media (min-width: 900px) {
-    body {
-        font-size: 20px;
+    .nav-links-desktop {
         display: none;
     }
 }
 
+@media (min-width: 900px) {
+    body {
+        font-size: 20px;   
+    }
+    .phone {
+        display: none;
+    }
+    .hamburger {
+        display: none;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-bar {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .logo {
+        justify-content: center;
+    }
+    .nav-links-desktop {
+        display: flex;
+        li {
+            padding: 0 2.5rem;
+            list-style: none;
+            
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+    }
+    .cards {
+        height: 500px;
+        background-image: none;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .cards::before {
+        content: "";
+        position: absolute;
+        top: 15%;
+        left: 0%;
+        width: 150%;
+        height: 150%;
+        z-index: -1;
+        background: url(../img/vines.svg) 0 0 no-repeat;
+        transform: rotate(30deg);
+      }
+      
+    .card {
+        width: 30%;
+        margin: 0px 10px;
+    }
+    .cards-inner {
+        flex-flow: row;
+        margin-bottom: 20px;
+    }
+
 @media (min-width: 1200px) {
     body {
         font-size: 22px;
+        display: none;
+    }
+
     }
 }
 
