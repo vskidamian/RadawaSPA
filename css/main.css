@@ -186,6 +186,12 @@ a {
 .hamburger, .hamburger--slider.is-active {
   margin-right: 10px;
   z-index: 200;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .logo {
@@ -330,6 +336,7 @@ li.fade {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn:active {
