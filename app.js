@@ -4,6 +4,7 @@ const links = document.querySelectorAll(".nav-links li");
 const body = document.body;
 const galleryTags = document.querySelectorAll(".gallery a");
 const seeMore = document.querySelector("#galeria-btn")
+const btn = document.querySelector(".btn");
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("is-active")
@@ -23,8 +24,4 @@ links.forEach(link => {
         })
         body.classList.toggle("overy");
     })
-})
-
-seeMore.addEventListener("click", () => {
-
 });
