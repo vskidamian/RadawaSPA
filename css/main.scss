@@ -43,6 +43,29 @@ a {
     outline: none;
     border: none;
 }
+.btn-white {
+    padding: 10px 15px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.2s all ease-out;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;  
+    -webkit-tap-highlight-color: transparent;  
+}
+.btn-white:active {
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+   // transform: translateY(1px);
+    background-color: #ffbca0;
+}
 .hamburger, .hamburger--slider.is-active {
     margin-right: 10px;
     z-index: 200;
@@ -606,23 +629,26 @@ footer {
     .nav-bar {
         width: 80%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
     .logo {
         justify-content: center;
     }
     .nav-links-desktop {
         display: flex;
+        height: 100%;
+        align-items: center;
         li {
-            padding: 0 2.5rem;
             list-style: none;
             
         }
-        li a{
+        li a {
+            display: block;
             text-decoration: none;
             color: black;
             font-weight: 600;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
+            padding: 2rem 2rem;
         }
     }
     .cards {
@@ -636,9 +662,9 @@ footer {
         content: "";
         position: absolute;
         top: 15%;
-        left: 0%;
+        left: 15%;
         width: 150%;
-        height: 150%;
+        height: 160%;
         z-index: -1;
         background: url(../img/vines.svg) 0 0 no-repeat;
         transform: rotate(30deg);
@@ -651,6 +677,59 @@ footer {
     .cards-inner {
         flex-flow: row;
         margin-bottom: 20px;
+    }
+    .gallery {
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(21, 3vw);
+        gap: 30px;
+    }
+    .gallery__item--1 {
+        grid-column: 1/4;
+        grid-row: 1/6;
+    }
+    .gallery__item--2 {
+        grid-column: 4/7;
+        grid-row: 1/6;
+    }
+    .gallery__item--3 {
+         grid-column: 7/10;
+         grid-row: 1/6;
+    }
+    .gallery__item--4 {
+        grid-column: 1/4;
+        grid-row: 6/11;
+    }
+    .gallery__item--5 {
+        grid-column: 4/7;
+        grid-row: 6/11;
+    }
+    .gallery__item--6 {
+        grid-column: 7/10;
+        grid-row: 6/11;
+    }
+    .gallery__item--7 {
+         grid-column: 1/4;
+         grid-row: 11/16;
+    }
+    .gallery__item--8 {
+        grid-column: 4/7;
+        grid-row: 11/16;
+    }
+    .gallery__item--9 {
+        grid-column: 7/10;
+        grid-row: 11/16;
+    }
+    .gallery__item--10{
+        grid-column: 1/4;
+        grid-row: 16/21;
+    }
+    .gallery__item--11 {
+         grid-column: 4/7;
+         grid-row: 16/21;
+    }
+    .gallery__item--12 {
+        grid-column: 7/10;
+        grid-row: 16/21;
     }
 
 @media (min-width: 1200px) {

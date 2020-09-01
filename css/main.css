@@ -183,6 +183,32 @@ a {
   border: none;
 }
 
+.btn-white {
+  padding: 10px 15px;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-white:active {
+  -webkit-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+  background-color: #ffbca0;
+}
+
 .hamburger, .hamburger--slider.is-active {
   margin-right: 10px;
   z-index: 200;
@@ -978,9 +1004,9 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .logo {
     -webkit-box-pack: center;
@@ -991,16 +1017,21 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .nav-links-desktop li {
-    padding: 0 2.5rem;
     list-style: none;
   }
   .nav-links-desktop li a {
+    display: block;
     text-decoration: none;
     color: black;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    padding: 2rem 2rem;
   }
   .cards {
     height: 500px;
@@ -1013,9 +1044,9 @@ footer {
     content: "";
     position: absolute;
     top: 15%;
-    left: 0%;
+    left: 15%;
     width: 150%;
-    height: 150%;
+    height: 160%;
     z-index: -1;
     background: url(../img/vines.svg) 0 0 no-repeat;
     -webkit-transform: rotate(30deg);
@@ -1031,6 +1062,109 @@ footer {
         -ms-flex-flow: row;
             flex-flow: row;
     margin-bottom: 20px;
+  }
+  .gallery {
+    -ms-grid-columns: (1fr)[9];
+        grid-template-columns: repeat(9, 1fr);
+    -ms-grid-rows: (3vw)[21];
+        grid-template-rows: repeat(21, 3vw);
+    gap: 30px;
+  }
+  .gallery__item--1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    grid-row: 1/6;
+  }
+  .gallery__item--2 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+    grid-column: 4/7;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    grid-row: 1/6;
+  }
+  .gallery__item--3 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 3;
+    grid-column: 7/10;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    grid-row: 1/6;
+  }
+  .gallery__item--4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 5;
+    grid-row: 6/11;
+  }
+  .gallery__item--5 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+    grid-column: 4/7;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 5;
+    grid-row: 6/11;
+  }
+  .gallery__item--6 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 3;
+    grid-column: 7/10;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 5;
+    grid-row: 6/11;
+  }
+  .gallery__item--7 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 11;
+    -ms-grid-row-span: 5;
+    grid-row: 11/16;
+  }
+  .gallery__item--8 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+    grid-column: 4/7;
+    -ms-grid-row: 11;
+    -ms-grid-row-span: 5;
+    grid-row: 11/16;
+  }
+  .gallery__item--9 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 3;
+    grid-column: 7/10;
+    -ms-grid-row: 11;
+    -ms-grid-row-span: 5;
+    grid-row: 11/16;
+  }
+  .gallery__item--10 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 16;
+    -ms-grid-row-span: 5;
+    grid-row: 16/21;
+  }
+  .gallery__item--11 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+    grid-column: 4/7;
+    -ms-grid-row: 16;
+    -ms-grid-row-span: 5;
+    grid-row: 16/21;
+  }
+  .gallery__item--12 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 3;
+    grid-column: 7/10;
+    -ms-grid-row: 16;
+    -ms-grid-row-span: 5;
+    grid-row: 16/21;
   }
 }
 
