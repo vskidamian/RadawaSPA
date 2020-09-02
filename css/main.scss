@@ -64,7 +64,7 @@ a {
 .btn-white:active {
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
    // transform: translateY(1px);
-    background-color: #ffbca0;
+    background-color: #ffa782;
 }
 .hamburger, .hamburger--slider.is-active {
     margin-right: 10px;
@@ -185,8 +185,9 @@ a {
 .btn:active {
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
    // transform: translateY(1px);
-    background-color: #ffbca0;
+    background-color: #ffa782;
 }
+
 .btn__about {
     margin-bottom: 25px;
     white-space: nowrap;  
@@ -280,10 +281,6 @@ a {
     justify-content: space-evenly;
     border-radius: 20px;
     border: 3px solid rgb(255, 255, 255);
-}
-.first-card .card-img {
-    width: 100px;
-    height: 100px;
 }
 .first-card {
     img {
@@ -643,12 +640,15 @@ footer {
             
         }
         li a {
-            display: block;
+            display: flex;
             text-decoration: none;
             color: black;
             font-weight: 600;
             font-size: 1.2rem;
-            padding: 2rem 2rem;
+            padding: 0 2rem;
+            align-items: center;
+            height: 10vh;
+            transition: 0.2s all ease-out;
         }
     }
     .cards {
@@ -731,17 +731,36 @@ footer {
         grid-column: 7/10;
         grid-row: 16/21;
     }
+    .nav-links-desktop li a:hover {
+        background-color: #ffa782;
+        color: white;
+    }
 
 @media (min-width: 1200px) {
     body {
         font-size: 22px;
-        display: none;
     }
-
+    .intro-txt, .oferta-txt, .galeria-txt, .kontakt-txt {
+        width: 80%;
+        margin: auto;
+    }
+    .intro__img img {
+        width: 100%;
+        height: 100%;
+    }  
+    #oferta {
+        margin-top: 50px;
+    }
+    .cards::before{
+        height: 180%;
+    }
     }
 }
 
 @media (min-width: 1400px) {
-
+    body {
+        font-size: 22px;
+        display: none;
+    }
 }
 /*# sourceMappingURL=main.css.map */
