@@ -20,29 +20,12 @@
   outline: none;
   border: none;
 
-  &:hover {
-    @if $hamburger-hover-use-filter == true {
-      filter: $hamburger-hover-filter;
-    }
-    @else {
-      opacity: $hamburger-hover-opacity;
-    }
-  }
 
   &.is-active {
-    &:hover {
-      @if $hamburger-hover-use-filter == true {
-        filter: $hamburger-active-hover-filter;
-      }
-      @else {
-        opacity: $hamburger-active-hover-opacity;
-      }
-    }
-
     .hamburger-inner,
     .hamburger-inner::before,
     .hamburger-inner::after {
-      background-color: $hamburger-active-layer-color;
+      background-color: white;
     }
   }
 }
@@ -68,7 +51,7 @@
   &::after {
     width: $hamburger-layer-width;
     height: $hamburger-layer-height;
-    background-color: $hamburger-layer-color;
+    background-color: white;
     border-radius: $hamburger-layer-border-radius;
     position: absolute;
     transition-property: transform;
