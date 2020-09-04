@@ -187,7 +187,7 @@ a {
 }
 
 .btn__about {
-    margin-bottom: 25px;
+    margin: 0 auto 25px auto;
     white-space: nowrap;  
 }
 
@@ -241,6 +241,12 @@ a {
     font-size: 0.9rem;
     text-align: center;
     margin: 25px;
+}
+.intro-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .intro__img {
@@ -401,6 +407,7 @@ input,textarea{
     background: var(--primary);
     padding: 10px 0;
 }
+
 .kontakt__text {
     margin-bottom: 25px;
     font-size: 1.1rem;
@@ -749,6 +756,10 @@ footer {
     #oferta {
         margin-top: 50px;
     }
+    .card {
+        margin: 0px 15px;
+        height: 350px;
+    }
     .cards {
         height: 600px;
     }
@@ -773,13 +784,129 @@ footer {
         border-radius: 50px;
         margin-bottom: 50px;
     }
+    #kontakt {
+        background-image: none;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    #kontakt::before {
+        content: "";
+        position: absolute;
+        top: 17%;
+        left: 17%;
+        width: 132%;
+        height: 110%;
+        z-index: -1;
+        background: url(../img/vines-dark.svg) 0 0 no-repeat;
+        transform: rotate(18deg);
+      }
 }
 
 
 @media (min-width: 1400px) {
     body {
         font-size: 22px;
-        display: none;
+    }
+    #about {
+        flex-direction: row;
+    }
+    .line {
+        width: 20vw;
+    }
+    .intro-txt {
+        width: 30%;
+    }
+    .intro__img {
+        margin-top: 7rem;
+    }
+    .card {
+        width: 20%;
+        margin: 0px 100px;
+    }
+    .cards::before {
+        top:0%;
+        left: 15%;
+        width: 75%;
+        transform: rotate(66deg);
+    }
+    #ofera {
+        margin-top: 7rem;
+    }
+    #galeria {
+         margin-top: 7rem;
+    }
+    .gallery {
+        gap: 20px;
+        grid-template-columns: repeat(15, 1fr);
+        grid-template-rows: repeat(12, 3vw);
+    }
+    .gallery__item--1 {
+        grid-column: 1/7;
+        grid-row: 1/5;
+    }
+    .gallery__item--2 {
+        grid-column: 7/10;
+        grid-row: 1/5;
+    }
+    .gallery__item--3 {
+         grid-column: 10/13;
+         grid-row: 1/5;
+    }
+    .gallery__item--4 {
+        grid-column: 13/16;
+        grid-row: 1/5;
+    }
+    .gallery__item--5 {
+        grid-column: 1/4;
+        grid-row: 5/9;
+    }
+    .gallery__item--6 {
+        grid-column: 4/7;
+        grid-row: 5/9;
+    }
+    .gallery__item--7 {
+         grid-column: 13/16;
+         grid-row: 5/9;
+    }
+    .gallery__item--8 {
+        grid-column: 7/13;
+        grid-row: 5/9;
+    }
+    .gallery__item--9 {
+        grid-column: 1/4;
+        grid-row: 9/13;
+    }
+    .gallery__item--10{
+        grid-column: 4/10;
+        grid-row: 9/13;
+    }
+    .gallery__item--11 {
+         grid-column: 10/13;
+         grid-row: 9/13;
+    }
+    .gallery__item--12 {
+        grid-column: 13/16;
+        grid-row: 9/13;
+    }
+    .kontakt {
+        width: 30vw;
+    }
+    #kontakt::before {
+        top: 31%;
+        left: 25%;
+    }
+    .p-phone {
+        margin-left: 150px;
+    }
+    .p-addres {
+        margin-left: 300px;
+    }
+    .p-city {
+        margin-left: 450px;
+    }
+    .footer__email {
+        margin-left: 600px;
     }
 }
 /*# sourceMappingURL=main.css.map */

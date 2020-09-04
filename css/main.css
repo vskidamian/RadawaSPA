@@ -362,7 +362,7 @@ li.fade {
 }
 
 .btn__about {
-  margin-bottom: 25px;
+  margin: 0 auto 25px auto;
   white-space: nowrap;
 }
 
@@ -434,6 +434,22 @@ li.fade {
   font-size: 0.9rem;
   text-align: center;
   margin: 25px;
+}
+
+.intro-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .intro__img {
@@ -1180,6 +1196,10 @@ footer {
   #oferta {
     margin-top: 50px;
   }
+  .card {
+    margin: 0px 15px;
+    height: 350px;
+  }
   .cards {
     height: 600px;
   }
@@ -1208,12 +1228,183 @@ footer {
     border-radius: 50px;
     margin-bottom: 50px;
   }
+  #kontakt {
+    background-image: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  #kontakt::before {
+    content: "";
+    position: absolute;
+    top: 17%;
+    left: 17%;
+    width: 132%;
+    height: 110%;
+    z-index: -1;
+    background: url(../img/vines-dark.svg) 0 0 no-repeat;
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
 }
 
 @media (min-width: 1400px) {
   body {
     font-size: 22px;
-    display: none;
+  }
+  #about {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .line {
+    width: 20vw;
+  }
+  .intro-txt {
+    width: 30%;
+  }
+  .intro__img {
+    margin-top: 7rem;
+  }
+  .card {
+    width: 20%;
+    margin: 0px 100px;
+  }
+  .cards::before {
+    top: 0%;
+    left: 15%;
+    width: 75%;
+    -webkit-transform: rotate(66deg);
+            transform: rotate(66deg);
+  }
+  #ofera {
+    margin-top: 7rem;
+  }
+  #galeria {
+    margin-top: 7rem;
+  }
+  .gallery {
+    gap: 20px;
+    -ms-grid-columns: (1fr)[15];
+        grid-template-columns: repeat(15, 1fr);
+    -ms-grid-rows: (3vw)[12];
+        grid-template-rows: repeat(12, 3vw);
+  }
+  .gallery__item--1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1/5;
+  }
+  .gallery__item--2 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 3;
+    grid-column: 7/10;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1/5;
+  }
+  .gallery__item--3 {
+    -ms-grid-column: 10;
+    -ms-grid-column-span: 3;
+    grid-column: 10/13;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1/5;
+  }
+  .gallery__item--4 {
+    -ms-grid-column: 13;
+    -ms-grid-column-span: 3;
+    grid-column: 13/16;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1/5;
+  }
+  .gallery__item--5 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 4;
+    grid-row: 5/9;
+  }
+  .gallery__item--6 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+    grid-column: 4/7;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 4;
+    grid-row: 5/9;
+  }
+  .gallery__item--7 {
+    -ms-grid-column: 13;
+    -ms-grid-column-span: 3;
+    grid-column: 13/16;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 4;
+    grid-row: 5/9;
+  }
+  .gallery__item--8 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7/13;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 4;
+    grid-row: 5/9;
+  }
+  .gallery__item--9 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 4;
+    grid-row: 9/13;
+  }
+  .gallery__item--10 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-column: 4/10;
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 4;
+    grid-row: 9/13;
+  }
+  .gallery__item--11 {
+    -ms-grid-column: 10;
+    -ms-grid-column-span: 3;
+    grid-column: 10/13;
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 4;
+    grid-row: 9/13;
+  }
+  .gallery__item--12 {
+    -ms-grid-column: 13;
+    -ms-grid-column-span: 3;
+    grid-column: 13/16;
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 4;
+    grid-row: 9/13;
+  }
+  .kontakt {
+    width: 30vw;
+  }
+  #kontakt::before {
+    top: 31%;
+    left: 25%;
+  }
+  .p-phone {
+    margin-left: 150px;
+  }
+  .p-addres {
+    margin-left: 300px;
+  }
+  .p-city {
+    margin-left: 450px;
+  }
+  .footer__email {
+    margin-left: 600px;
   }
 }
 /*# sourceMappingURL=main.css.map */
